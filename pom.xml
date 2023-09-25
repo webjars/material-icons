@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>material-icons</artifactId>
-  <version>1.13.11</version>
+  <version>1.13.11-SNAPSHOT</version>
   <name>material-icons</name>
   <description>WebJar for material-icons</description>
   <url>http://webjars.org</url>
