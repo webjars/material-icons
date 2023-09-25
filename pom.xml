@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>material-icons</artifactId>
-  <version>1.13.11-SNAPSHOT</version>
+  <version>1.13.11</version>
   <name>material-icons</name>
   <description>WebJar for material-icons</description>
   <url>http://webjars.org</url>
@@ -41,7 +41,7 @@
     <url>http://github.com/webjars/material-icons</url>
     <connection>scm:git:https://github.com/webjars/material-icons.git</connection>
     <developerConnection>scm:git:https://github.com/webjars/material-icons.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>material-icons-1.13.11</tag>
   </scm>
       
   <build>
@@ -72,13 +72,13 @@
             </goals>
             <configuration>
               <target>
-                <echo message="download archive"/>
-                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                <echo message="unzip archive"/>
-                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                <echo message="moving resources"/>
+                <echo message="download archive" />
+                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                <echo message="unzip archive" />
+                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                <echo message="moving resources" />
                 <move todir="${destDir}">
-                  <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}"/>
+                  <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}" />
                 </move>
               </target>
             </configuration>
